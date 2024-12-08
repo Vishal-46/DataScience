@@ -5,8 +5,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 data=pd.read_csv('C:/Users/visha/Downloads/video-game-sales.csv')
+#First step in Data science is to analyse the data which means exploratory analysis of the dataset
 print(data.head())
 print(data.info())
 print(data.describe())
+#Here The information of the dataset like no. of columns, what are all the columns their datatype and also its quantity are shown.
+
 ---
 #
