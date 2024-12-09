@@ -17,6 +17,7 @@ print(data.isna().sum())
 #when the dataframe or dataset has missing values
 data.dropna(inplace=True)  # Removes all rows with ANY missing values.
 data.dropna(subset=['ColumnName'], inplace=True)  # Removes rows where 'ColumnName' has NaN.
+#To fill these missing values we will use .fillna method on columns
 
 ---
 #
