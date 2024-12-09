@@ -21,7 +21,8 @@ data.dropna(subset=['ColumnName'], inplace=True)  # Removes rows where 'ColumnNa
 data['ColumnName'].fillna('Missing', inplace=True)  # Replace NaN in 'ColumnName' with 'Missing'.
 data['ColumnName'].fillna(data['ColumnName'].mean(), inplace=True)  # Fill NaN with column's mean.
 data['ColumnName'].fillna(data['ColumnName'].median(), inplace=True)  # Fill NaN with median.
-
+#now lets again check for the missing values 
+print(data.isna().sum())  # Shows the count of NaN in each column.
 
 ---
 #
