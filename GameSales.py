@@ -16,6 +16,7 @@ sns.histplot(data['Year'], bins=30) #here there will be a histogram(graph) with 
 print(data.isna().sum())
 #when the dataframe or dataset has missing values
 data.dropna(inplace=True)  # Removes all rows with ANY missing values.
+data.dropna(subset=['ColumnName'], inplace=True)  # Removes rows where 'ColumnName' has NaN.
 
 ---
 #
