@@ -18,6 +18,10 @@ print(data.isna().sum())
 data.dropna(inplace=True)  # Removes all rows with ANY missing values.
 data.dropna(subset=['ColumnName'], inplace=True)  # Removes rows where 'ColumnName' has NaN.
 #To fill these missing values we will use .fillna method on columns
+data['ColumnName'].fillna('Missing', inplace=True)  # Replace NaN in 'ColumnName' with 'Missing'.
+data['ColumnName'].fillna(data['ColumnName'].mean(), inplace=True)  # Fill NaN with column's mean.
+data['ColumnName'].fillna(data['ColumnName'].median(), inplace=True)  # Fill NaN with median.
+
 
 ---
 #
