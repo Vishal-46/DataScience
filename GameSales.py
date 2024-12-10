@@ -23,6 +23,6 @@ data['ColumnName'].fillna(data['ColumnName'].mean(), inplace=True)  # Fill NaN w
 data['ColumnName'].fillna(data['ColumnName'].median(), inplace=True)  # Fill NaN with median.
 #now lets again check for the missing values 
 print(data.isna().sum())  # Shows the count of NaN in each column.
-#
+#These are all the basic steps of exploratorydata analysis on a dataset.We can even perform more actions in a dataset.
 ---
 #
